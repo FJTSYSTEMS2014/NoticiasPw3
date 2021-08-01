@@ -1,0 +1,31 @@
+.App {
+  padding: 36px;
+  text-align: center;
+}
+
+.SerachForm-rapper{
+  display: flex;
+  justify-content: center;
+}
+
+.MoviesList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.MoviesList-item{
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+.notFound{
+  text-align: center;
+}
+
+.movieCardDetail{
+  margin-left: 26%;
+  margin-top: 12%;
+  
+}
