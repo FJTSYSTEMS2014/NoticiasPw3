@@ -32,11 +32,6 @@ function NewsArg() {
                             <p className="alert alert-dark"> < img src={item.urlToImage}
                                 className="rounded img-fluid img-thumbnail" alt={item.title} /></p>
 
-
-
-
-
-
                             <div><p className="bg-danger" href={item.url}><h4>"{item.description}"</h4></p></div>
                             <div><p className="bg-success text-white" >{item.content}</p><a href={item.url} target="_blank"
                                 rel="noreferrer noopener"
