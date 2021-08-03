@@ -8,7 +8,7 @@ function NewsArg() {
         const fetchData = async () => {
             const res = await fetch(
 
-                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/noticiasFranck',
+                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-entertaiment.json',
             );
             const json = await res.json();
             setData(json.articles);
