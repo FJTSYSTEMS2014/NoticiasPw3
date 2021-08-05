@@ -4,23 +4,20 @@ import img from '../../components/img/noticias-franck.gif'
 
 function Navbar() {
     return (
-        <div className="navbar navbar-dark bg-dark"> <img src={img} className="img-fluid" alt="img-navbar"/>
-        <div className="navbar navbar-dark bg-dark nav-container navbar navbar-expand-lg navbar-dark form-inline bg-light">
+        <div className="navbar-brand  btn-outline-success my-0 my-sm-0"> <img src={img} className="img-fluid" alt="img-navbar"/>
+        <div className="navbar nav-container navbar navbar-expand-lg  bg-light">
 
-            <ul><li> <NavLink exact to="/hola" className="btn btn-outline-success my-0 my-sm-0"> Noticias de Franck
-            </NavLink></li></ul>
+             <NavLink exact to="/buscar" className="btn btn-outline-success my-0 my-sm-0"> Buscar Noticias
+            </NavLink>
 
-            <ul><li> <NavLink exact to="/" className="btn btn-outline-success my-0 my-sm-0"> Home
-            </NavLink></li></ul>
+             <NavLink exact to="/home" className="btn btn-outline-success my-0 my-sm-0"> Ultimas Noticias
+            </NavLink>
 
-            <ul><li> <NavLink exact to="/" className="btn btn-outline-success my-0 my-sm-0"> Noticias de hoy
-            </NavLink></li></ul>
-            <ul><li> <NavLink exact to="/" className="btn btn-outline-success my-0 my-sm-0"> Noticias
-            </NavLink></li></ul>
-            <ul><li class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-4" type="search" placeholder="...Buscar" aria-label="Search"/>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar Noticias</button>
-    </li></ul>
+             <NavLink exact to="/formulario" className="btn btn-outline-success my-0 my-sm-0"> Crear url de NEWS.org
+            </NavLink>
+             <NavLink exact to="/news" className="btn btn-outline-success my-0 my-sm-0"> Noticias
+            </NavLink>
+
 
 
 

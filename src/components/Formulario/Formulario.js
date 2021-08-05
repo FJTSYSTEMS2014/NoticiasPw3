@@ -3,6 +3,7 @@ import React, {  useState } from 'react';
 //https://bluuweb.github.io/react-udemy/04-formularios/
 
 // key:  d2358245efe14cf09b1f1e97c2e3a7f5
+// por pagina: https://newsapi.org/v2/top-headlines?country=ar&category=general&page=2&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5
 
 const Formulario = () => {
 
@@ -19,7 +20,8 @@ const Formulario = () => {
 const buscar= "bariloche";
 const fechaIni="2021-07-29";
 const fechaOut="2021-08-01";
-const popularity="popularity"
+const popularity="popularity";
+const page="1";
 
   const guardarDatos = e => {
     e.preventDefault();
@@ -47,7 +49,7 @@ const popularity="popularity"
     const key = `${privateKey}`;
    // const urlnoticias = `${urlBaseNews}country=${pais}&language=${language}&category=${categoria}&apiKey=${key}`;
       const urlnoticias = `${urlBaseNews}country=${pais}&category=${categoria}&apiKey=${key}`;
-      const urlnoticias1 = `${urlBaseNews1}q=${buscar}&from=${fechaIni}&to=${fechaOut}&sortBy=${popularity}&apiKey=${key}`;
+      const urlnoticias1 = `${urlBaseNews1}q=${buscar}&from=${fechaIni}&to=${fechaOut}&sortBy=${popularity}&page=${page}&apiKey=${key}`;
 
 ;
     
