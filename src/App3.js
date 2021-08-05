@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // const origin='https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5';
+const proxyUrl = "https://cors-anywhere.herokuapp.com/"
 
 function NewsArg() {
     const [data, setData] = useState([]);
@@ -8,7 +9,7 @@ function NewsArg() {
         const fetchData = async () => {
             const res = await fetch(
 
-                'https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5',
+                `${proxyUrl}https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5`,
             );
             const json = await res.json();
             setData(json.articles);
