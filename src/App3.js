@@ -9,7 +9,7 @@ function NewsArg() {
         const fetchData = async () => {
             const res = await fetch(
 
-                `${proxyUrl}https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5`,
+                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-general-3-8-2021.json',
             );
             const json = await res.json();
             setData(json.articles);
