@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function NewsArg() {
     const [data, setData] = useState([]);
-    const [url, setUrl] = useState(["https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5"]);
+    const [url, setUrl] = useState(["https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-general-3-8-2021.json"]);
   const url2="https://newsapi.org/v2/top-headlines?country=ar&category=&page=2&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5"
     useEffect(() => {
         const fetchData = async () => {
