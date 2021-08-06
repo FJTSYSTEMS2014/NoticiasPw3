@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 // const origin='https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5';
-const proxyUrl = "https://cors-anywhere.herokuapp.com/corsdemo/"
+// 100 resultados = https://newsapi.org/v2/top-headlines?country=ar&pagesize=100&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5
 
-function NewsArg() {
+function Deportes() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
 
-                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-general-3-8-2021.json',
+                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-sports.json',
             );
             const json = await res.json();
             setData(json.articles);
@@ -48,4 +48,4 @@ function NewsArg() {
     );
 }
 
-export default NewsArg;
+export default Deportes;
