@@ -9,7 +9,7 @@ function Tecnologia() {
         const fetchData = async () => {
             const res = await fetch(
 
-                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-technology.json',
+                'https://raw.githubusercontent.com/FJTSYSTEMS2014/link_api_noticias/master/top-headlines-technology.json',
             );
             const json = await res.json();
             setData(json.articles);

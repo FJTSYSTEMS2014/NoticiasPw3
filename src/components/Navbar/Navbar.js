@@ -73,6 +73,13 @@ function Navbar () {
         >
           {' '}Deportes
         </NavLink>
+        <NavLink
+          exact
+          to="/prueba"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Prueba
+        </NavLink>
 
       </div>
     </div>

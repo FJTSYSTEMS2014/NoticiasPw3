@@ -12,6 +12,7 @@ import Tecnologia from './components/News/Tecnologia';
 import Salud from './components/News/Salud';
 import Negocios from './components/News/Negocios';
 import Deportes from './components/News/Deportes';
+import Prueba from './components/News/Prueba';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/negocios" exact component={Negocios} />
                 <Route path="/deportes" exact component={Deportes} />
                 <Route path="/entretenimiento" exact component={Entretenimiento} />
+                <Route path="/prueba" exact component={Prueba} />
             </Switch>
 
         </Router>

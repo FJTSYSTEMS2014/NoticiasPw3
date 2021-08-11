@@ -9,7 +9,7 @@ function Entretenimiento() {
         const fetchData = async () => {
             const res = await fetch(
 
-                'https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-entertaiment.json',
+                'https://raw.githubusercontent.com/FJTSYSTEMS2014/link_api_noticias/master/top-headlines-entertainment.json',
             );
             const json = await res.json();
             setData(json.articles);
