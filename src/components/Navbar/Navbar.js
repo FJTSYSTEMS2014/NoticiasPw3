@@ -1,31 +1,96 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import img from '../../components/img/noticias-franck.gif'
+import {NavLink} from 'react-router-dom';
+import img from '../../components/img/01.jpg';
 
-function Navbar() {
-    return (
-        <div className="navbar navbar-dark bg-dark"> <img src={img} className="img-fluid" alt="img-navbar"/>
-        <div className="navbar navbar-dark bg-dark nav-container navbar navbar-expand-lg navbar-dark form-inline bg-light">
+function Navbar () {
+  return (
+    <div className="navbar-brand  btn-outline-success my-0 my-sm-0">
+      {' '}<img src={img} className="img-fluid" alt="img-navbar" />
+      <div className="navbar nav-container navbar navbar-expand-lg  bg-light">
 
-            <ul><li> <NavLink exact to="/hola" className="btn btn-outline-success my-0 my-sm-0"> Noticias de Franck
-            </NavLink></li></ul>
+        <NavLink
+          exact
+          to="/formulario"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Crear URL
+        </NavLink>
+        <NavLink
+          exact
+          to="/general"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}General
+        </NavLink>
+        <NavLink
+          exact
+          to="/buscar"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Buscar
+        </NavLink>
+        <NavLink
+          exact
+          to="/ciencia"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Ciencia
+        </NavLink>
 
-            <ul><li> <NavLink exact to="/" className="btn btn-outline-success my-0 my-sm-0"> Home
-            </NavLink></li></ul>
+        <NavLink
+          exact
+          to="/entretenimiento"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Entretenimiento
+        </NavLink>
+     
+        <NavLink
+          exact
+          to="/tec"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Tecnologia
+        </NavLink>
+        <NavLink
+          exact
+          to="/salud"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Salud
+        </NavLink>
+        <NavLink
+          exact
+          to="/negocios"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Negocios
+        </NavLink>
+        <NavLink
+          exact
+          to="/deportes"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}Deportes
+        </NavLink>
+        <NavLink
+          exact
+          to="/QR_Generator"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}QR_Generator
+        </NavLink>
+        <NavLink
+          exact
+          to="/QR_Scann"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}QR_Scann
+        </NavLink>
 
-            <ul><li> <NavLink exact to="/" className="btn btn-outline-success my-0 my-sm-0"> Noticias de hoy
-            </NavLink></li></ul>
-            <ul><li> <NavLink exact to="/" className="btn btn-outline-success my-0 my-sm-0"> Noticias
-            </NavLink></li></ul>
-            <ul><li class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-4" type="search" placeholder="...Buscar" aria-label="Search"/>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar Noticias</button>
-    </li></ul>
-
-
-
-        </div></div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
