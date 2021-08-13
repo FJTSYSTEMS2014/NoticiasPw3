@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import img from '../../components/img/noticias-franck.gif';
+import img from '../../components/img/01.jpg';
 
 function Navbar () {
   return (
@@ -75,10 +75,17 @@ function Navbar () {
         </NavLink>
         <NavLink
           exact
-          to="/prueba"
+          to="/QR_Generator"
           className="btn btn-outline-success my-0 my-sm-0"
         >
-          {' '}Prueba
+          {' '}QR_Generator
+        </NavLink>
+        <NavLink
+          exact
+          to="/QR_Scann"
+          className="btn btn-outline-success my-0 my-sm-0"
+        >
+          {' '}QR_Scann
         </NavLink>
 
       </div>

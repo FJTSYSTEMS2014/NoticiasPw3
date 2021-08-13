@@ -3,7 +3,8 @@ import {useState, useEffect} from 'react';
 //https://laurenashpole.github.io/react-inner-image-zoom/
 //import InnerImageZoom from 'react-inner-image-zoom';
 
-const url4='https://gateway.marvel.com:443/v1/public/characters?ts=1&limit=20&apikey=0f7ec6e9620a0aea41af082d03d7a88d&hash=804f04417964946af208ca3ab2546bb9';
+const url4='https://raw.githubusercontent.com/FJTSYSTEMS2014/link_api_noticias/master/top-headlines-general.json';
+
 function Get_Marvel2 () {
   const [personajes, setPersonajes] = useState ([]);
 
@@ -11,7 +12,7 @@ function Get_Marvel2 () {
   useEffect (() => {
     fetch (url4) 
       .then (res => res.json ()) 
-      .then (res => setPersonajes (res.data.results)) 
+      .then (res => setPersonajes (res.articles)) 
       .catch (error => {
         console.log (error);
       });
@@ -24,19 +25,24 @@ function Get_Marvel2 () {
       {personajes.map (per => (
         <div className="row-2 shadow-lg p-1 mb-1 bg-light rounded">
           <img
-            src={`${per.thumbnail.path}.${per.thumbnail.extension}`}
+            src={per.urlToImage}
             className="card-img-top mx-auto d-block"
-            style={{width: '15rem', height: '15rem'}}
-            key={per.id}
+            
+            key={per.title}
           />
           <div className="card-body">
 
-            <ul className="row-2 shadow-lg p-1 mb-1 bg-dark rounded">
-              <li className="list-group-item fw-bold">Name:{per.name}</li>
-              <li className="list-group-item">ID:{per.id}</li>
-              <li className="list-group-item">Description:{per.description}</li>
-              <li className="list-group-item">Modified:{per.modified}</li>
+            <ul className="row-2 shadow-lg p-1 mb-1 bg-light rounded">
+              <li className="list-group-item fw-bold">
+                Name:{per.title}</li>
+              <li className="list-group-item">ID:{per.url}</li>
+              <li className="list-group-item">Description:{per.publishedAt}</li>
+              <li className="list-group-item">Modified:{per.source.name}</li>
               <li className="list-group-item">Vestibulum at eros</li>
+              <a></a> <h4  className="btn-outline-danger my-0 my-sm-0">{per.title}</h4><a href={per.url} target="_blank"
+                                rel="noreferrer noopener"
+                                className="btn btn-outline-danger my-0 my-sm-0"
+                                role="button">...Seguir leyendo</a>
             </ul>
 
           </div>

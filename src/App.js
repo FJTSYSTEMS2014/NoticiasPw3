@@ -13,6 +13,8 @@ import Salud from './components/News/Salud';
 import Negocios from './components/News/Negocios';
 import Deportes from './components/News/Deportes';
 import Prueba from './components/News/Prueba';
+import AppQR from './AppQR';
+import AppReaderQR from './AppReaderQR';
 
 
 function App() {
@@ -31,7 +33,8 @@ function App() {
                 <Route path="/negocios" exact component={Negocios} />
                 <Route path="/deportes" exact component={Deportes} />
                 <Route path="/entretenimiento" exact component={Entretenimiento} />
-                <Route path="/prueba" exact component={Prueba} />
+                <Route path="/QR_Generator" exact component={AppQR} />
+                <Route path="/QR_Scann" exact component={AppReaderQR} />
             </Switch>
 
         </Router>
