@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import NewsArg from './components/News/NewsArg';
+import NavbarDown from './components/Navbar/NavbarDown';
+//import NewsArg from './components/News/NewsArg';
 import General from './components/News/General';
 import Ciencia from './components/News/Ciencia';
 import Entretenimiento from './components/News/Entretenimiento';
@@ -23,7 +24,7 @@ function App() {
             <Navbar />
 
             <Switch >
-            <Route path="/" exact component={Formulario} />
+            <Route path="/" exact component={Prueba} />
                 <Route path="/buscar" exact component={AppTablaDatos} />
                 <Route path="/general" exact component={General} />
                 <Route path="/formulario" exact component={Formulario} />   
@@ -36,8 +37,9 @@ function App() {
                 <Route path="/QR_Generator" exact component={AppQR} />
                 <Route path="/QR_Scann" exact component={AppReaderQR} />
             </Switch>
-
+            <NavbarDown />
         </Router>
+        
         <FooterPage/>
         </div>
     )
