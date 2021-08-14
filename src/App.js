@@ -4,7 +4,10 @@ import Navbar from './components/Navbar/Navbar';
 import NavbarDown from './components/Navbar/NavbarDown';
 //import NewsArg from './components/News/NewsArg';
 import General from './components/News/General';
+<<<<<<< HEAD
 import GoogleNewsArg from './components/News/GoogleNewArg';
+=======
+>>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
 import Ciencia from './components/News/Ciencia';
 import Entretenimiento from './components/News/Entretenimiento';
 import AppTablaDatos from './components/ApiDatosTabla/AppTablaDatos';
@@ -27,7 +30,10 @@ function App() {
             <Switch >
             <Route path="/" exact component={Prueba} />
                 <Route path="/buscar" exact component={AppTablaDatos} />
+<<<<<<< HEAD
                 <Route path="/google-ar" exact component={GoogleNewsArg} />
+=======
+>>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
                 <Route path="/general" exact component={General} />
                 <Route path="/formulario" exact component={Formulario} />   
                 <Route path="/ciencia" exact component={Ciencia} />

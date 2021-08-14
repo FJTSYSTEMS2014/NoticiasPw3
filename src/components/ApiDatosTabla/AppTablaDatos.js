@@ -8,7 +8,11 @@ function App() {
   const [busqueda, setBusqueda] = useState("");
 
   const peticionGet = async () => {
+<<<<<<< HEAD
     await axios.get("https://raw.githubusercontent.com/FJTSYSTEMS2014/link_api_noticias/master/top-headlines-general.json'")
+=======
+    await axios.get("https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-entertaiment.json")
+>>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
       .then(response => {
         setUsuarios(response.data.articles);
         setTablaUsuarios(response.data.articles);
