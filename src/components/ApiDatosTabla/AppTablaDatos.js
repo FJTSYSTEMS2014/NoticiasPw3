@@ -8,7 +8,7 @@ function App() {
   const [busqueda, setBusqueda] = useState("");
 
   const peticionGet = async () => {
-    await axios.get("https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines.json")
+    await axios.get("https://raw.githubusercontent.com/FJTSYSTEMS2014/React_init/master/top-headlines-entertaiment.json")
       .then(response => {
         setUsuarios(response.data.articles);
         setTablaUsuarios(response.data.articles);
@@ -27,7 +27,8 @@ function App() {
   const filtrar = (terminoBusqueda) => {
     let resultadosBusqueda = tablaUsuarios.filter((elemento) => {
       if (elemento.title.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-         ) 
+        || elemento.description.toString().toLowerCase().includes(terminoBusqueda.toLowerCase()) ) 
+        console.log(elemento.title.toString().toLowerCase().includes(terminoBusqueda.toLowerCase()))
         {
         return elemento;
       }

@@ -5,7 +5,7 @@ import img from '../../components/img/01.jpg';
 function Navbar () {
   return (
     <div className="navbar-brand  btn-outline-success my-0 my-sm-0" >
-      {' '}<img src={img} className="img-fluid" alt="img-navbar" />
+      {' '}
       <div className="navbar nav-container navbar navbar-expand-lg  bg-light">
 
         <NavLink
