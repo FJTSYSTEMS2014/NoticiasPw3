@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import NavbarDown from './components/Navbar/NavbarDown';
 //import NewsArg from './components/News/NewsArg';
 import General from './components/News/General';
+import GoogleNewsArg from './components/News/GoogleNewArg';
 import Ciencia from './components/News/Ciencia';
 import Entretenimiento from './components/News/Entretenimiento';
 import AppTablaDatos from './components/ApiDatosTabla/AppTablaDatos';
@@ -26,6 +27,7 @@ function App() {
             <Switch >
             <Route path="/" exact component={Prueba} />
                 <Route path="/buscar" exact component={AppTablaDatos} />
+                <Route path="/google-ar" exact component={GoogleNewsArg} />
                 <Route path="/general" exact component={General} />
                 <Route path="/formulario" exact component={Formulario} />   
                 <Route path="/ciencia" exact component={Ciencia} />

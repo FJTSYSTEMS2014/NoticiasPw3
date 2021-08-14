@@ -4,7 +4,7 @@ import img from '../../components/img/01.jpg';
 
 function Navbar () {
   return (
-    <div className="navbar-brand  btn-outline-success my-0 my-sm-0" >
+    <div className="navbar-brand   my-0 my-sm-0" >
       {' '}<img src={img} className="img-fluid" alt="img-navbar" />
       <div className="navbar nav-container navbar navbar-expand-lg  bg-light">
 
@@ -14,6 +14,13 @@ function Navbar () {
           className="btn btn-outline-dark my-0 my-sm-0 p-4"
         >
           {' '}Crear URL
+        </NavLink>
+        <NavLink
+          exact
+          to="/google-ar"
+          className="btn btn-outline-primary my-0 my-sm-0 p-3"
+        >
+          {' '}Noticias Argentinas Destacadas
         </NavLink>
         <NavLink
           exact
@@ -55,7 +62,7 @@ function Navbar () {
         <NavLink
           exact
           to="/salud"
-          className="btn btn-outline-dark my-0 my-sm-0"
+          className="btn btn-outline-success my-0 my-sm-0"
         >
           {' '}Salud
         </NavLink>
