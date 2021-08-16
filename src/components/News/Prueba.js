@@ -24,8 +24,7 @@ function Get_Marvel2 () {
 
       {personajes.map (per => (
         <div className="row-2 shadow-lg p-2 mb-1 bg-light rounded">
-          <img
-            src={per.urlToImage}
+          <img src={per.urlToImage}
             className="card-img-top mx-auto d-block"
             
             key={per.ObjectId}

@@ -2,12 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import NavbarDown from './components/Navbar/NavbarDown';
-//import NewsArg from './components/News/NewsArg';
-import General from './components/News/General';
-<<<<<<< HEAD
 import GoogleNewsArg from './components/News/GoogleNewArg';
-=======
->>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
+import GoogleNewsBr from './components/News/GoogleNewBr';
+import General from './components/News/General';
 import Ciencia from './components/News/Ciencia';
 import Entretenimiento from './components/News/Entretenimiento';
 import AppTablaDatos from './components/ApiDatosTabla/AppTablaDatos';
@@ -20,6 +17,7 @@ import Deportes from './components/News/Deportes';
 import Prueba from './components/News/Prueba';
 import AppQR from './AppQR';
 import AppReaderQR from './AppReaderQR';
+import ArgentinaInTheWorld from './components/News/ArgentinaInTheWorld';
 
 
 function App() {
@@ -30,10 +28,8 @@ function App() {
             <Switch >
             <Route path="/" exact component={Prueba} />
                 <Route path="/buscar" exact component={AppTablaDatos} />
-<<<<<<< HEAD
                 <Route path="/google-ar" exact component={GoogleNewsArg} />
-=======
->>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
+                <Route path="/google-br" exact component={GoogleNewsBr} />
                 <Route path="/general" exact component={General} />
                 <Route path="/formulario" exact component={Formulario} />   
                 <Route path="/ciencia" exact component={Ciencia} />
@@ -42,6 +38,7 @@ function App() {
                 <Route path="/negocios" exact component={Negocios} />
                 <Route path="/deportes" exact component={Deportes} />
                 <Route path="/entretenimiento" exact component={Entretenimiento} />
+                <Route path="/arInTheWorld" exact component={ArgentinaInTheWorld} />
                 <Route path="/QR_Generator" exact component={AppQR} />
                 <Route path="/QR_Scann" exact component={AppReaderQR} />
             </Switch>

@@ -4,33 +4,42 @@ import img from '../../components/img/01.jpg';
 
 function Navbar () {
   return (
-<<<<<<< HEAD
-    <div className="navbar-brand   my-0 my-sm-0" >
-=======
-    <div className="navbar-brand  btn-outline-success my-0 my-sm-0" >
->>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
+    <div className="navbar-brand  btn-outline-light my-0 my-sm-0" >
       {' '}<img src={img} className="img-fluid" alt="img-navbar" />
       <div className="navbar nav-container navbar navbar-expand-lg  bg-light">
 
         <NavLink
           exact
           to="/formulario"
-          className="btn btn-outline-dark my-0 my-sm-0 p-4"
+          className="btn btn-outline-dark my-0 my-sm-0 p-1"
         >
           {' '}Crear URL
         </NavLink>
+      
         <NavLink
           exact
-<<<<<<< HEAD
+          to="/google-br"
+          className="btn btn-outline-success my-0 my-sm-0 p-2"
+        >
+          {' '}Noticias Do Brasil
+        </NavLink>
+        <NavLink
+          exact
           to="/google-ar"
           className="btn btn-outline-primary my-0 my-sm-0 p-3"
         >
           {' '}Noticias Argentinas Destacadas
         </NavLink>
+
         <NavLink
           exact
-=======
->>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
+          to="/arInTheWorld"
+          className="btn btn-outline-success my-0 my-sm-0 p-2"
+        >
+          {' '}Argentina en el Mundo
+        </NavLink>
+        <NavLink
+          exact
           to="/general"
           className="btn btn-outline-danger my-0 my-sm-0"
         >
@@ -69,11 +78,7 @@ function Navbar () {
         <NavLink
           exact
           to="/salud"
-<<<<<<< HEAD
           className="btn btn-outline-success my-0 my-sm-0"
-=======
-          className="btn btn-outline-dark my-0 my-sm-0"
->>>>>>> 76d3c2b86b66e28ab7803030a68a91177dda3dcb
         >
           {' '}Salud
         </NavLink>

@@ -8,8 +8,7 @@ function Footer() {
      
         
           <p className=" text-center">
-            &copy;{new Date().getFullYear()} PW3-Api -News - Franck Tscherig  | All rights reserved |
-            Terms Of Service | Privacy
+            &copy;{new Date().getFullYear()} PW3-Api -News - Franck Tscherig 
           </p>
       
       </div>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// const origin='https://newsapi.org/v2/top-headlines?country=ar&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5';
-// 100 resultados = https://newsapi.org/v2/top-headlines?country=ar&pagesize=100&category=&apiKey=d2358245efe14cf09b1f1e97c2e3a7f5
+
 
 function General() {
     const [data, setData] = useState([]);
@@ -18,14 +17,14 @@ function General() {
     }, []);
 
     return (
-        <div className="w-75 p-2 bd-highlight" >
+        <div className="w-100 p-2 bd-highlight" >
 
             <ul className="rounded float-center">
                 {data.map(item => (
                     <li className="d-flex flex-column  bd-highlight mb-4" key={item.ObjectId}>
                         <div className="d-flex flex-column text-white bg-dark">
 
-                            <a></a> <h4>{item.title}</h4><a href={item.url} target="_blank"
+                             <h4>{item.title}</h4><a href={item.url} target="_blank"
                                 rel="noreferrer noopener"
                                 className="btn btn-outline-danger my-0 my-sm-0"
                                 role="button">...Seguir leyendo</a>
